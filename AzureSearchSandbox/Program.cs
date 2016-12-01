@@ -30,7 +30,7 @@ namespace AzureSearchSandbox
             Console.WriteLine(string.Empty);
 
             Console.WriteLine("Begin searching Price more than 100,000....");
-            searcher.SearchDocuments(indexClientApi, "*", "Price gt 100000");
+            searcher.SearchDocuments(indexClientApi, "*", "Price gt 100000 and Category eq 'Sedan'");
             Console.WriteLine(string.Empty);
 
             Console.WriteLine("Begin searching by Category facet");
